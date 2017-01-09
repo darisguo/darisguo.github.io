@@ -1,66 +1,73 @@
 /*
-	Overflow by HTML5 UP
+	Phantom by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* Basic */
+/* Form */
 
-	body {
-		background-image: url("../../images/bg.jpg");
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: auto;
-		background-attachment: scroll;
-		-ms-behavior: url("assets/js/ie/backgroundsize.min.htc");
-	}
-
-/* Section/Article */
-
-	section > .last-child,
-	article > .last-child,
-	section.last-child,
-	article.last-child {
-		margin-bottom: 0;
+	form .field {
+		float: none !important;
+		width: 100% !important;
+		padding-left: 0 !important;
 	}
 
 /* Button */
 
-	input[type="button"],
 	input[type="submit"],
 	input[type="reset"],
+	input[type="button"],
 	button,
 	.button {
-		position: relative;
-		-ms-behavior: url("assets/js/ie/PIE.htc");
+		border: solid 2px #585858 !important;
 	}
 
-		input[type="button"].style2:hover,
-		input[type="submit"].style2:hover,
-		input[type="reset"].style2:hover,
-		button.style2:hover,
-		.button.style2:hover {
-			color: #35b88f !important;
+		input[type="submit"]:hover,
+		input[type="reset"]:hover,
+		input[type="button"]:hover,
+		button:hover,
+		.button:hover {
+			border-color: #f2849e !important;
 		}
 
-		input[type="button"].style3,
-		input[type="submit"].style3,
-		input[type="reset"].style3,
-		button.style3,
-		.button.style3 {
-			background: #fefefe;
-			border: solid 1px #dad9d9;
+		input[type="submit"].special,
+		input[type="reset"].special,
+		input[type="button"].special,
+		button.special,
+		.button.special {
+			border: none !important;
 		}
 
-/* Footer */
+/* Tiles */
 
-	#footer .icons {
-		position: relative;
-		-ms-behavior: url("assets/js/ie/PIE.htc");
+	.tiles article > .image:before, .tiles article > .image:after {
+		display: none;
 	}
 
 /* Header */
 
-	#header header p {
-		border-top: solid 1px #888;
+	#header .logo .symbol {
+		display: none;
 	}
+
+	#header nav ul li a[href="#menu"] {
+		text-indent: 0;
+		width: auto;
+		font-size: 0.8em;
+	}
+
+		#header nav ul li a[href="#menu"]:before, #header nav ul li a[href="#menu"]:after {
+			display: none;
+		}
+
+/* Footer */
+
+	#footer > .inner section {
+		width: 50%;
+		margin-left: 3em;
+	}
+
+		#footer > .inner section:first-child {
+			margin-left: 0;
+			width: 40%;
+		}

@@ -1,29 +1,17 @@
 /*
-	Overflow by HTML5 UP
+	Phantom by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
 (function($) {
 
-	var settings = {
-
-		// Full screen header?
-			fullScreenHeader: true,
-
-		// Parallax background effect?
-			parallax: true,
-
-		// Parallax factor (lower = more intense, higher = less intense).
-			parallaxFactor: 10
-
-	};
-
 	skel.breakpoints({
-		wide: '(max-width: 1680px)',
-		normal: '(max-width: 1080px)',
-		narrow: '(max-width: 840px)',
-		mobile: '(max-width: 736px)'
+		xlarge:	'(max-width: 1680px)',
+		large:	'(max-width: 1280px)',
+		medium:	'(max-width: 980px)',
+		small:	'(max-width: 736px)',
+		xsmall:	'(max-width: 480px)'
 	});
 
 	$(function() {
@@ -31,131 +19,181 @@
 		var	$window = $(window),
 			$body = $('body');
 
-		if (skel.vars.touch) {
-
-			settings.parallax = false;
-			$body.addClass('is-scroll');
-
-		}
-
 		// Disable animations/transitions until the page has loaded.
 			$body.addClass('is-loading');
 
 			$window.on('load', function() {
-				$body.removeClass('is-loading');
+				window.setTimeout(function() {
+					$body.removeClass('is-loading');
+				}, 100);
 			});
 
-		// CSS polyfills (IE<9).
-			if (skel.vars.IEVersion < 9)
-				$(':last-child').addClass('last-child');
+		// Touch?
+			if (skel.vars.touch)
+				$body.addClass('is-touch');
 
-		// Fix: Placeholder polyfill.
-			$('form').placeholder();
+		// Forms.
+			var $form = $('form');
 
-		// Prioritize "important" elements on mobile.
-			skel.on('+mobile -mobile', function() {
-				$.prioritize(
-					'.important\\28 mobile\\29',
-					skel.breakpoint('mobile').active
-				);
-			});
+			// Auto-resizing textareas.
+				$form.find('textarea').each(function() {
 
-		// Scrolly links.
-			$('.scrolly-middle').scrolly({
-				speed: 1000,
-				anchor: 'middle'
-			});
+					var $this = $(this),
+						$wrapper = $('<div class="textarea-wrapper"></div>'),
+						$submits = $this.find('input[type="submit"]');
 
-			$('.scrolly').scrolly({
-				speed: 1000,
-				offset: function() { return (skel.breakpoint('mobile').active ? 70 : 190); }
-			});
+					$this
+						.wrap($wrapper)
+						.attr('rows', 1)
+						.css('overflow', 'hidden')
+						.css('resize', 'none')
+						.on('keydown', function(event) {
 
-		// Full screen header.
-			if (settings.fullScreenHeader) {
+							if (event.keyCode == 13
+							&&	event.ctrlKey) {
 
-				var $header = $('#header');
+								event.preventDefault();
+								event.stopPropagation();
 
-				if ($header.length > 0) {
-
-					var $header_header = $header.find('header');
-
-					$window
-						.on('resize.overflow_fsh', function() {
-
-							if (skel.breakpoint('mobile').active)
-								$header.css('padding', '');
-							else {
-
-								var p = Math.max(192, ($window.height() - $header_header.outerHeight()) / 2);
-								$header.css('padding', p + 'px 0 ' + p + 'px 0');
+								$(this).blur();
 
 							}
 
 						})
-						.trigger('resize.overflow_fsh');
+						.on('blur focus', function() {
+							$this.val($.trim($this.val()));
+						})
+						.on('input blur focus --init', function() {
 
-					$window.load(function() {
-						$window.trigger('resize.overflow_fsh');
-					});
+							$wrapper
+								.css('height', $this.height());
 
-				}
+							$this
+								.css('height', 'auto')
+								.css('height', $this.prop('scrollHeight') + 'px');
 
-			}
+						})
+						.on('keyup', function(event) {
 
-		// Parallax background.
+							if (event.keyCode == 9)
+								$this
+									.select();
 
-			// Disable parallax on IE (smooth scrolling is jerky), and on mobile platforms (= better performance).
-				if (skel.vars.browser == 'ie'
-				||	skel.vars.mobile)
-					settings.parallax = false;
+						})
+						.triggerHandler('--init');
 
-			if (settings.parallax) {
+					// Fix.
+						if (skel.vars.browser == 'ie'
+						||	skel.vars.mobile)
+							$this
+								.css('max-height', '10em')
+								.css('overflow-y', 'auto');
 
-				var $dummy = $(), $bg;
+				});
 
-				$window
-					.on('scroll.overflow_parallax', function() {
+			// Fix: Placeholder polyfill.
+				$form.placeholder();
 
-						// Adjust background position.
-							$bg.css('background-position', 'center ' + (-1 * (parseInt($window.scrollTop()) / settings.parallaxFactor)) + 'px');
-
-					})
-					.on('resize.overflow_parallax', function() {
-
-						// If we're in a situation where we need to temporarily disable parallax, do so.
-							if (!skel.breakpoint('wide').active
-							||	skel.breakpoint('narrow').active) {
-
-								$body.css('background-position', '');
-								$bg = $dummy;
-
-							}
-
-						// Otherwise, continue as normal.
-							else
-								$bg = $body;
-
-						// Trigger scroll handler.
-							$window.triggerHandler('scroll.overflow_parallax');
-
-					})
-					.trigger('resize.overflow_parallax');
-
-			}
-
-		// Poptrox.
-			$('.gallery').poptrox({
-				useBodyOverflow: false,
-				usePopupEasyClose: false,
-				overlayColor: '#0a1919',
-				overlayOpacity: (skel.vars.IEVersion < 9 ? 0 : 0.75),
-				usePopupDefaultStyling: false,
-				usePopupCaption: true,
-				popupLoaderText: '',
-				windowMargin: 10,
-				usePopupNav: true
+		// Prioritize "important" elements on medium.
+			skel.on('+medium -medium', function() {
+				$.prioritize(
+					'.important\\28 medium\\29',
+					skel.breakpoint('medium').active
+				);
 			});
+
+		// Menu.
+			var $menu = $('#menu');
+
+			$menu.wrapInner('<div class="inner"></div>');
+
+			$menu._locked = false;
+
+			$menu._lock = function() {
+
+				if ($menu._locked)
+					return false;
+
+				$menu._locked = true;
+
+				window.setTimeout(function() {
+					$menu._locked = false;
+				}, 350);
+
+				return true;
+
+			};
+
+			$menu._show = function() {
+
+				if ($menu._lock())
+					$body.addClass('is-menu-visible');
+
+			};
+
+			$menu._hide = function() {
+
+				if ($menu._lock())
+					$body.removeClass('is-menu-visible');
+
+			};
+
+			$menu._toggle = function() {
+
+				if ($menu._lock())
+					$body.toggleClass('is-menu-visible');
+
+			};
+
+			$menu
+				.appendTo($body)
+				.on('click', function(event) {
+					event.stopPropagation();
+				})
+				.on('click', 'a', function(event) {
+
+					var href = $(this).attr('href');
+
+					event.preventDefault();
+					event.stopPropagation();
+
+					// Hide.
+						$menu._hide();
+
+					// Redirect.
+						if (href == '#menu')
+							return;
+
+						window.setTimeout(function() {
+							window.location.href = href;
+						}, 350);
+
+				})
+				.append('<a class="close" href="#menu">Close</a>');
+
+			$body
+				.on('click', 'a[href="#menu"]', function(event) {
+
+					event.stopPropagation();
+					event.preventDefault();
+
+					// Toggle.
+						$menu._toggle();
+
+				})
+				.on('click', function(event) {
+
+					// Hide.
+						$menu._hide();
+
+				})
+				.on('keydown', function(event) {
+
+					// Hide on escape.
+						if (event.keyCode == 27)
+							$menu._hide();
+
+				});
 
 	});
 
