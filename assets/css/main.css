@@ -1690,6 +1690,7 @@
 
 	p {
 		margin: 0 0 2em 0;
+		width: 50%;
 	}
 
 	h1 {
@@ -1698,6 +1699,7 @@
 		line-height: 1.3;
 		margin: 0 0 1em 0;
 		letter-spacing: -0.035em;
+		width: 50%;
 	}
 
 		h1 a {
@@ -1727,6 +1729,7 @@
 		margin: 0 0 2em 0;
 		text-transform: uppercase;
 		letter-spacing: 0.35em;
+		width: 50%;
 	}
 
 		h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -1912,6 +1915,7 @@
 		list-style: decimal;
 		margin: 0 0 2em 0;
 		padding-left: 1.25em;
+		width: 50%;
 	}
 
 		ol li {
@@ -1922,6 +1926,7 @@
 		list-style: disc;
 		margin: 0 0 2em 0;
 		padding-left: 1em;
+		width: 50%;
 	}
 
 		ul li {
