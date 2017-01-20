@@ -26,6 +26,15 @@ h2 {
   margin-right: auto;
   margin-bottom: 30px;
 }
+
+.bigim {
+    width:60%;
+  display: block;
+  Margin-top:30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
 .inlineImg{
     width:28%;
   display: inline;
@@ -33,6 +42,20 @@ h2 {
   margin-left: 220px;
   margin-right: 10px;
   margin-bottom: 30px;
+}
+
+.threepics {
+    display: inline;
+    width:10%;
+    Margin-top:30px;
+  margin-left: 320px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+}
+
+#landscapepic {
+    margin-left: 60px;
+    width: 15%;
 }
 
 #logo {
