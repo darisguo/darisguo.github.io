@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>UpQuest - Jiawen</title>
+        <link rel="stylesheet" type="text/css" href="main.css" />
+    </head>
+    <body>
+        <h1>UpQuest</h1>
+        <p>Role: Founder, Designer, User tester</p>
+        <div><img src="imgs/iPad%20Pro%20Landscape%20Copy-11.png" class = "im"/></div>
+        <h2>Problem/Solution</h2>
+        <p>Teachers face a problem that they start the school year with limited information about the knowledge level of their students. In the remainder of the school year their students progress is tracked on an ad-hoc basis with quizzes. Our application serves to provide a method for teachers to give formative assessments to their students to understand the materials that they already know and what they need to teach. This would help to customize the learning experience for each classroom and each student.</p>
+        <h2>Process</h2>
+        <h3>Needfinding/User research</h3>
+        <img src="imgs/hmws.JPG" class = "im"/>
+        <p class="footnote">All HMWs we came up with</p>
+        <p>We started by interviewing elementary and secondary school teachers about the pain points in their teaching. Some issues that came up frequently with our interviewees included: the vastly different knowledge levels among students, the difficulties in assessing students, too much time needed for lesson planning, and behavioral issues of the students. In general, teachers felt that they had so little time but so much work to be done. Thus, we explored various ways to frame the problems and came up with 3 “how-might-we”s: how might we get data on student’s knowledge levels? How might we let teachers search many lesson plans for key terms and ideas? How might we make students understand why they should focus on their current materials?</p>
+        <img src="imgs/solutions.JPG" class = "im"/>
+        <p class="footnote">All solutions we came up with</p>
+        <p>We went on to explore potential solutions to the questions. We finally arrived at 3 most promising solutions addressing the first 2 questions. </p>
+        <p>Modular, standardized lesson plan format (HMW 1), Optical character recognition for physical lesson plans that teachers upload (HMW 1), and a gamified system to reward assessments (HMW 2).</p>
+        <div><img src="imgs/teacherscreen2.png" class = "inlineImg"/><img src="imgs/studentscreen1.png" class = "inlineImg" id = "secondimg"/></div>
+        <p class="footnote">Winner prototype</p>
+        <p>We created 3 experience prototypes and tested them on 3 teachers. The prototype that was most accepted was the gamified system to reward assessments. It consisted of a teacher screen and student screen. Teachers send assessments to their students and receive instant feedbacks of students’ knowledge levels. Our users found the prototype to be intuitive and useful, but also pointed out the difficulties in breaking down knowledge into this level of granularity, especially for liberal arts subjects.</p>
+        <h3>Low-fi prototype/Usability test</h3>
+        <p>Thus we narrowed down to the problem: how might we get data on student’s knowledge levels in order to help teachers plan their lessons more efficiently? </p>
+        <p>We first came up with 3 user tasks for the app: teachers giving assessments to students, students answering questions, and teachers checking results.</p>
+        <p>We sketched out series of storyboards and decided on a teacher screen on web and a student screen on mobile phones, because the screen real estates that provided by web apps make it easier for teachers to display assessment results, while phones provide easiest access for students to do the assessments. We went on to flesh out the details of the paper prototype and found 3 teachers to test it.</p>
+        <p>The responses were generally positive. On a completely functional level, our buttons for “action” items like creating new assessments (as the teacher), starting new quizzes (as the student), and moving from screen to screen could have been clearer and more pronounced in general. Our testers also suggested some features they would like to have: an aggregate view of the class performance, a test bank with curated questions, and tags on questions that could help breaking down students into sections. One tester brought up the issue of cheating on students’ side.</p>
+        <h3>Mid-fi prototype</h3>
+        <p>Incorporating feedbacks from the usability test, we now moved into digital interface design. We used Figma because it affords team cooperation better than any other tools we could find.</p>
+        <p>Major changes:</p>
+        <ul>
+            <li>Taking out students’ app</li>
+            
+        </ul>
+        <p>Considering the time limits of the project, we decided to take out students’ app and mainly focus on teachers’ side. From then on we would assume our app works with other apps that manage sending questions to students. So we changed the task of students taking quizzes into teachers managing quizzes.</p>
+        <p>Another ramification from this change was that we had to make the teachers’ app into an IPad app to satisfy the course requirement of making mobile apps.</p>
+        <ul>
+            <li>Navigation</li>            
+        </ul>
+        <p>In our paper prototype user test, users found it hard to navigate between screens. In order to solve this problem, I suggested using a side menu while the other team member insisted on using a hamburger menu to get rid of any visual distractions. After long debates, our teaching assistant suggested a different way of navigation. From our home screen, we can click on the tiles to see the quiz results while clicking on the ‘manage quizzes’ button leads you to creating and managing quizzes. Clicking on the home button on the top right corner will lead you to the homepage.</p>
+        <ul>
+            <li>Quiz bank</li>            
+        </ul>
+        <p>Our testers suggested that manually inputting all questions would be too time consuming. Thus we added a quiz bank that integrates all quizzes made by teachers.</p>
+        <ul>
+            <li>More granular display of student data</li>            
+        </ul>
+        <p>We introduced tags that represent specific knowledge, which could help teachers identify the weak and strong points of their students.</p>
+        <h3>Heuristic evaluations</h3>
+        <p>Our mid-fi prototype was then put under the scrutiny of classmates using Nielson Heuristic evaluation methods. </p>
+        <p>Problems found:</p>
+        <ul>
+            <li>Tasks not delineated clearly enough from the beginning</li>            
+        </ul>
+        <p>Testers found it unintuitive to put creating and managing quizzes under the same button. While some didn't notice that the tiles were supposed to lead to the quiz results.</p>
+        <ul>
+            <li>Quiz results page hard to decipher</li>            
+        </ul>
+        <p>The color coding on the quiz results page were unclear without any notes. Also, the information provided on the results page are sometimes repetitive, leading to unnecessary cluttering. </p>
+        <ul>
+            <li>Lack of error prevention or correction</li>            
+        </ul>
+        <p>For example, there's no way to edit an assigned quiz.</p>
+        <h3>Hi-fi prototype</h3>
+        <p>See <a href="https://marvelapp.com/35h664h" target = "_blank">here</a>.</p>
+        <h3>Further changes</h3>
+        <h3>What's next?</h3>
+        <h2>Key learnings</h2>
+    </body>
+</html>

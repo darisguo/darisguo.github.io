@@ -1,6 +1,6 @@
 body {
   background-color:#FAFAFA;
-  Margin-top:130px;
+  Margin-top:100px;
 }
 h1 {
   color:#32847d;
@@ -8,11 +8,15 @@ h1 {
   font-family:Corbel;
   
 }
-h4 {
+h2, h3, h4, h5, h6 {
   font-family:Corbel;
   text-align:center;
   width:50%;
   margin:auto;
+  margin-top:10px;
+}
+h2 {
+    text-align: justify;
 }
 .im {
   width:40%;
@@ -22,7 +26,25 @@ h4 {
   margin-right: auto;
   margin-bottom: 30px;
 }
-p {
+.inlineImg{
+    width:28%;
+  display: inline;
+    Margin-top:30px;
+  margin-left: 220px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+}
+
+#secondimg{
+    margin-left: 60px;
+}
+
+a:link {
+    color:#23e232;
+}
+
+
+p,ol,ul {
   width:50%;
   margin:auto;
   font-family:Baskerville;
@@ -31,6 +53,17 @@ p {
   line-height:1.5;
 }
 
+ol, ul {
+    color:#32847d;
+    margin-left:310px;
+}
+
+p.footnote{
+    color: dimgrey;
+    margin-top: -30px;
+    text-align: center;
+    font-size: 14px;
+}
 p.index {
     text-align: center;
 }
