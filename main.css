@@ -88,6 +88,10 @@ ol, ul {
     margin-left:310px;
 }
 
+ol {
+    color:black;
+}
+
 p.footnote{
     color: dimgrey;
     margin-top: -30px;

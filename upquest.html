@@ -21,11 +21,12 @@
         <p>We went on to explore potential solutions to the questions. We finally arrived at 3 most promising solutions addressing the first 2 questions. </p>
         <p>Modular, standardized lesson plan format (HMW 1), Optical character recognition for physical lesson plans that teachers upload (HMW 1), and a gamified system to reward assessments (HMW 2).</p>
         <div><img src="imgs/teacherscreen2.png" class = "inlineImg"/><img src="imgs/studentscreen1.png" class = "inlineImg" id = "secondimg"/></div>
-        <p class="footnote">Winner prototype</p>
+        <p class="footnote">Winner prototype: gamified assessment system</p>
         <p>We created 3 experience prototypes and tested them on 3 teachers. The prototype that was most accepted was the gamified system to reward assessments. It consisted of a teacher screen and student screen. Teachers send assessments to their students and receive instant feedbacks of students’ knowledge levels. Our users found the prototype to be intuitive and useful, but also pointed out the difficulties in breaking down knowledge into this level of granularity, especially for liberal arts subjects.</p>
         <h3>Low-fi prototype/Usability test</h3>
         <p>Thus we narrowed down to the problem: how might we get data on student’s knowledge levels in order to help teachers plan their lessons more efficiently? </p>
         <p>We first came up with 3 user tasks for the app: teachers giving assessments to students, students answering questions, and teachers checking results.</p>
+        
         <img src="imgs/AR.JPG" class = "threepics"/> <img src="imgs/PHONE.JPG" class = "threepics" id = "secondimg" /><img src="imgs/WEB.JPG" class="threepics" id = "landscapepic"/>
         <p>We sketched out series of storyboards and decided on a teacher screen on web and a student screen on mobile phones, because the screen real estates that provided by web apps make it easier to display assessment results for teachers, while phones provide easiest access for students to do the assessments. We went on to flesh out the details of the paper prototype and found 3 teachers to test it.</p>
         <img src="imgs/lofitask1.png" class = "bigim"/> 
@@ -42,14 +43,21 @@
             <li>Taking out students’ app</li>
             
         </ul>
-        <p>Considering the time limits of the project, we decided to take out students’ app and mainly focus on teachers’ side. From then on we would assume our app works with other apps that manage sending questions to students. So we changed the task of students taking quizzes into teachers managing quizzes.</p>
+        <p>Considering the time limits of the project, we decided to take out students’ app and mainly focus on teachers’ side. From then on we would assume our app works with other apps that manage sending questions to students. So we changed the task of students taking quizzes into teachers managing quizzes. Here's the 3 tasks we finalized:</p>
+        <ol>
+            <li>Teachers giving assessments to students</li>
+            <li>Teachers managing quizzes</li>
+            <li>Teachers checking results</li>
+        </ol>
         <p>Another ramification from this change was that we had to make the teachers’ app into an IPad app to satisfy the course requirement of making mobile apps.</p>
         <ul>
             <li>Navigation</li>            
         </ul>
-        <p>In our paper prototype user test, users found it hard to navigate between screens. In order to solve this problem, I suggested using a side menu while the other team member insisted on using a hamburger menu to get rid of any visual distractions. After long debates, our teaching assistant suggested a different way of navigation. From our home screen, we can click on the tiles to see the quiz results while clicking on the ‘manage quizzes’ button leads you to creating and managing quizzes. Clicking on the home button on the top right corner will lead you to the homepage.</p>
+        <p>In our paper prototype user test, users found it hard to navigate between screens. In order to solve this problem, I suggested using a side menu while the other team member insisted on using a hamburger menu to get rid of any visual distractions. After long debates, our teaching assistant suggested a different way of navigation. From our home screen, we can click on the tiles that represent classes to see the quiz results, while clicking on the ‘manage quizzes’ button leads you to creating and managing quizzes. Clicking on the home button on the top right corner will lead you to the homepage.</p>
         <img src="imgs/mid-fi.png" class= "bigim"/>
         <p class = "footnote">Navigation workflow</p>
+        <p>The reasoning behind this navigation was that it was hard to separate the features we had into several different sections no matter we use a sidebar or hamburger button. It seemed logical to create quizzes at a page where all the quizzes were listed. So with only 2 major functions, any navigation bar seemed unnecessary.</p>
+        <p>Another related design decision was that the homepage would show the number of students that have completed the latest quiz, because we thought the most common user case would be for teachers to check results of individual quizzes. It would be most efficient if they can see the completion rate right off the bat. There's no need to go check results if only half of the students have completed.</p>
         <ul>
             <li>Quiz bank</li>            
         </ul>
@@ -62,18 +70,22 @@
         </ul>
         <p>We introduced tags that represent specific knowledge, which could help teachers identify the weak and strong points of their students.</p>
         <img src="imgs/2%20iPad%20Pro%20Landscape%20Copy.png" class = "im"/>
+        <p>When showing results for the whole class, we used color coding to show the correct answers, underperforming students, etc. We chose to add signs with colors instead of changing the colors of the numbers out of concern for color blindness.</p>
+        <img src="imgs/oooo.png" class = "im">
+        <p>When showing a student's result for an individual quiz, we used a floating bar consisted of circles with checks and crosses to help teachers jump between questions more efficently. Checks and crosses were added as additional clues in case of color blindness.</p>
+        <img src="imgs/individual.png" class="im">
         <p class = "footnote">Quiz results by tag</p>
         <h3>Heuristic evaluations</h3>
         <p>Our mid-fi prototype was then put under the scrutiny of classmates using Nielson Heuristic evaluation methods. </p>
         <p>Problems found:</p>
         <ul>
-            <li>Tasks not delineated clearly enough from the beginning</li>            
+            <li>Tasks not delineated clearly enough in terms of functionalities</li>            
         </ul>
-        <p>Testers found it unintuitive to put creating and managing quizzes under the same button. While some didn't notice that the tiles were supposed to lead to the quiz results.</p>
+        <p>To our surprise, testers found it unintuitive to put creating and managing quizzes under the same button. While some didn't notice that the tiles were clickable and lead to the quiz results.</p>
         <ul>
             <li>Quiz results page hard to decipher</li>            
         </ul>
-        <p>The color coding on the quiz results page were unclear without any notes. Also, the information provided on the results page are sometimes repetitive, leading to unnecessary cluttering. </p>
+        <p>The color coding on the quiz results page were unclear, because we didn't add any notes. Also, the information provided on the results page are sometimes repetitive, leading to unnecessary cluttering. </p>
         <ul>
             <li>Lack of error prevention or correction</li>            
         </ul>
@@ -84,7 +96,7 @@
         <ul>
             <li>Navigation bar</li>            
         </ul>
-        <p> In the mid-fi prototype we had a landing page as a dashboard. Creating and managing quizzes were wrapped by the same button ”Manage Quizzes”, and tapping on the tiles of classes would lead to quiz results. To switch between tasks, users have to tap on the home button in the top right corner. In the hi-fi prototype, we took out the dashboard and added a tab bar at the bottom, which is always present. It separates the 3 tasks clearly and makes it easy to switch tasks.</p>
+        <p> In the mid-fi prototype we had a landing page as a dashboard. Creating and managing quizzes were wrapped by the same button ”Manage Quizzes”, and tapping on the tiles of classes would lead to quiz results. To switch between tasks, users have to tap on the home button in the top right corner. In the hi-fi prototype, we took out the dashboard and added a tab bar at the bottom, which is always present. It separates the 3 tasks clearly and makes it easy to switch tasks. Now instead of 3 taps to create quizzes, 1 tap on the bottom bar will do the trick.</p>
         <img src="imgs/navigation.png" class="bigim"/>
         <p>We also incorporated the quiz repository and assigned quizzes into one page, under the "Quiz management"     tab. On the left side the teacher can see all the classes he’s teaching and all the quiz repository folders he has. This change allows users to see the parallel relationship between repository and assigned quizzes, and allows a quick overview of all the classes and repository folders at first glance.</p>
         <img src="imgs/management.png" class="im"/>
@@ -99,13 +111,24 @@
         <p>In our previous version, there’s no way to edit a quiz once it is assigned. We added an ”edit” button in the hi-fi prototype, which allows one to edit the due date of an assigned quiz. But to edit the quiz itself, one still needs to go to the quiz repository, because the same quiz can be assigned to different classes, changing it in the repository would be more efficient.</p>
         <img src="imgs/editbutton.png" class = "im"/>
         <h3>Further changes</h3>
-        <p>After the project officially ended, I continued to iterate on the prototype on my own and made some changes.</p>
+        <p>After the project officially ended, I felt that there were issues that we left unresolved. So I continued to iterate on the prototype on my own and made some changes.</p>
         <p>The current state of the app can be seen <a href="https://marvelapp.com/35h664h" target = "_blank">here</a>.</p>
+        <p>Major changes:</p>
+        <ul>
+            <li>Editing quizzes</li>           
+        </ul>
+        <p>In the hi-fi prototype, one can only edit the contents of a quiz in the repository. This is not efficient as the teacher might be looking at a quiz he assigned for one class and realize that there are edits needed, and have to go to the repository to look for the quiz. </p>
+        <p></p>
+        
         <!-- <h3>What's next?</h3> -->
         <h2>Key learnings</h2>
         <ul>
             <li>User feedback is the key to creating better experience, and the most convincing argument for making decisions.</li>            
         </ul>
-        <p>There were times when my teamates and I had disagreements. In the end, it was always feedback from user tests that drove us to a consensus.  </p>
+        <p>There were times when my teamates and I had disagreements. In the end, it was always feedback from user tests that drove us to a consensus. Unfortuanately we can't have real data on this class project, which bothers me as I consider myself a highly data-driven person. </p>
+        <ul>
+            <li>The importance of setting up deadlines.</li>
+        </ul>
+        <p>Design can never be perfect. Without deadlines, it is easy to drag on and on and spend too much time on the nitty-gritties. This is a problem I encountered after I started to work on my own.</p>
     </body>
 </html>
