@@ -28,6 +28,7 @@
         <p>We first came up with 3 user tasks for the app: teachers giving assessments to students, students answering questions, and teachers checking results.</p>
         
         <img src="imgs/AR.JPG" class = "threepics"/> <img src="imgs/PHONE.JPG" class = "threepics" id = "secondimg" /><img src="imgs/WEB.JPG" class="threepics" id = "landscapepic"/>
+        <p class = "footnote">From left to right: AR, Phone, Web</p>
         <p>We sketched out series of storyboards and decided on a teacher screen on web and a student screen on mobile phones, because the screen real estates that provided by web apps make it easier to display assessment results for teachers, while phones provide easiest access for students to do the assessments. We went on to flesh out the details of the paper prototype and found 3 teachers to test it.</p>
         <img src="imgs/lofitask1.png" class = "bigim"/> 
         <p class="footnote">Teachers creating quizzes</p>
@@ -59,6 +60,12 @@
         <p>The reasoning behind this navigation was that it was hard to separate the features we had into several different sections no matter we use a sidebar or hamburger button. It seemed logical to create quizzes at a page where all the quizzes were listed. So with only 2 major functions, any navigation bar seemed unnecessary.</p>
         <p>Another related design decision was that the homepage would show the number of students that have completed the latest quiz, because we thought the most common user case would be for teachers to check results of individual quizzes. It would be most efficient if they can see the completion rate right off the bat. There's no need to go check results if only half of the students have completed.</p>
         <ul>
+            <li>Quiz repository</li>           
+        </ul>
+        <p>In the quiz management section, we had the distinction between quiz repository and my class quizzes. The idea was that quiz repository was the place that stored all the quizzes the teacher used historically. The teacher would create quizzes in the repository, and assign them. Or he could go to his class quizzes and import quizzes from the repository.</p>
+        <img src="imgs/repository.png" class = "inlineImg"><img src="imgs/classquiz.png" class = "inlineImg" id = "secondimg">
+        <p class = "footnote">Quiz repository and my class quizzes</p>
+        <ul>
             <li>Quiz bank</li>            
         </ul>
         
@@ -70,11 +77,13 @@
         </ul>
         <p>We introduced tags that represent specific knowledge, which could help teachers identify the weak and strong points of their students.</p>
         <img src="imgs/2%20iPad%20Pro%20Landscape%20Copy.png" class = "im"/>
+        <p class = "footnote">Quiz results by tag</p>
         <p>When showing results for the whole class, we used color coding to show the correct answers, underperforming students, etc. We chose to add signs with colors instead of changing the colors of the numbers out of concern for color blindness.</p>
         <img src="imgs/oooo.png" class = "im">
+    <p class = "footnote">Color coded quiz results</p>
         <p>When showing a student's result for an individual quiz, we used a floating bar consisted of circles with checks and crosses to help teachers jump between questions more efficently. Checks and crosses were added as additional clues in case of color blindness.</p>
         <img src="imgs/individual.png" class="im">
-        <p class = "footnote">Quiz results by tag</p>
+        <p class = "footnote">Individual's quiz result</p>
         <h3>Heuristic evaluations</h3>
         <p>Our mid-fi prototype was then put under the scrutiny of classmates using Nielson Heuristic evaluation methods. </p>
         <p>Problems found:</p>
@@ -117,9 +126,17 @@
         <ul>
             <li>Editing quizzes</li>           
         </ul>
-        <p>In the hi-fi prototype, one can only edit the contents of a quiz in the repository. This is not efficient as the teacher might be looking at a quiz he assigned for one class and realize that there are edits needed, and have to go to the repository to look for the quiz. </p>
+        <p>In the hi-fi prototype, one can only edit the contents of a quiz in the repository. This is not efficient, as the teacher might be looking at a quiz he assigned for one class and realize that there are edits needed, and have to go to the repository to look for the quiz. </p>
         <p></p>
-        
+        <ul>
+            <li>Renaming</li>           
+        </ul>
+        <ul>
+            <li>Filter for quiz bank</li>           
+        </ul>
+        <ul>
+            <li>Copy and edit questions</li>           
+        </ul>
         <!-- <h3>What's next?</h3> -->
         <h2>Key learnings</h2>
         <ul>
