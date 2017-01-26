@@ -107,8 +107,12 @@
         </ul>
         <p> In the mid-fi prototype we had a landing page as a dashboard. Creating and managing quizzes were wrapped by the same button ”Manage Quizzes”, and tapping on the tiles of classes would lead to quiz results. To switch between tasks, users have to tap on the home button in the top right corner. In the hi-fi prototype, we took out the dashboard and added a tab bar at the bottom, which is always present. It separates the 3 tasks clearly and makes it easy to switch tasks. Now instead of 3 taps to create quizzes, 1 tap on the bottom bar will do the trick.</p>
         <img src="imgs/navigation.png" class="bigim"/>
-        <p>We also incorporated the quiz repository and assigned quizzes into one page, under the "Quiz management"     tab. On the left side the teacher can see all the classes he’s teaching and all the quiz repository folders he has. This change allows users to see the parallel relationship between repository and assigned quizzes, and allows a quick overview of all the classes and repository folders at first glance.</p>
-        <img src="imgs/management.png" class="im"/>
+        <ul>
+            <li>Restructured "Quiz management" section</li>            
+        </ul>
+        <p>We incorporated the quiz repository and assigned quizzes into one page, under the "Quiz management"     tab. On the left side the teacher can see all the classes he’s teaching and all the quiz repository folders he has. This change allows users to see the parallel relationship between repository and assigned quizzes, and allows a quick overview of all the classes and repository folders at first glance.</p>
+        <p>Another change is in the way one assigns quizzes. Before, one has to import quizzes from the repository to assign, but now he can assign quizzes directly from the repository.</p>
+        <img src="imgs/newrepo.png" class="im"/>
         <ul>
             <li>Reorganized quiz results page</li>            
         </ul>
@@ -127,16 +131,25 @@
             <li>Editing quizzes</li>           
         </ul>
         <p>In the hi-fi prototype, one can only edit the contents of a quiz in the repository. This is not efficient, as the teacher might be looking at a quiz he assigned for one class and realize that there are edits needed, and have to go to the repository to look for the quiz. </p>
-        <p></p>
+        <p>But the challenge is, if we allow teachers to edit a quiz in a class, should the changes be reflected in all instances of the quiz? What if the teacher just want to change the quiz for one class? What if the quiz had been used in previous years? Should we create a new copy?</p>
+        <p>I decided that teachers will be given the options of changing all instances or only one. If he chose to change all, all the instances of the quiz in the current school year will be changed. But the instances in previous years remain intact. The quiz repository is thus organized by school year. Each folder contains all the quizzes that are used in one school year.</p>
+        <img src="imgs/changeall.png" class = "im"/>
+        <img src="imgs/repo.png" class = "im"/>
         <ul>
-            <li>Renaming</li>           
+            <li>Renaming and icons</li>           
         </ul>
+        <p>I changed the "quiz repository" to "quiz library" to make it more consistent with conventions. I also changed the navigation bars. "+ New quiz" became "Quiz bank" because editing existing quizzes also take place here. "Quiz management" became "My quizzes" because management doesn't seem to be a common word to use in this situation. Since the last tab is "Quiz results", "My quizzes" would not be confusing. Plus, the icon for "My quizzes" mimics the layout of the page. The icons were added to make the funtions of each tab more clear.</p>
+        <img src="imgs/navbar.png" class = "im"/>
         <ul>
             <li>Filter for quiz bank</li>           
         </ul>
+        <p>In previous prototypes we didn't quite flesh out the filter for quiz bank. Thus I changed the filter to allow more user freedom.</p>
+        <img src="imgs/filter.png" class = "im"/>
         <ul>
             <li>Copy and edit questions</li>           
         </ul>
+        <p>We didn't flesh out the way to use existing quizzes in the quiz bank. I decided that the user should be able to take the whole quizzes or pick questions from them.</p>
+        <img src="imgs/existing.png" class = "im"/>
         <!-- <h3>What's next?</h3> -->
         <h2>Key learnings</h2>
         <ul>
