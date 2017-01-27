@@ -21,8 +21,9 @@ h2 {
 h2, h3 {
     margin-bottom: 10px;
 }
-.im {
-  width:40%;
+
+img {
+  width:30%;
   display: block;
   Margin-top:30px;
   margin-left: auto;
@@ -30,8 +31,13 @@ h2, h3 {
   margin-bottom: 30px;
 }
 
+.im {
+  width:40%;
+  
+}
+
 .bigim {
-    width:60%;
+    width:50%;
   display: block;
   Margin-top:30px;
   margin-left: auto;
