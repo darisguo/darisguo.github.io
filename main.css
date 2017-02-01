@@ -1,15 +1,16 @@
 body {
   background-color:#FAFAFA;
-  Margin-top:100px;
+  margin-top:30px;
+    color:#424242;
 }
 h1 {
-  color:#32847d;
+  color:#292929;
   text-align: center;
   font-family:Corbel;
   
 }
 h2, h3, h4, h5, h6 {
-  font-family:Corbel;
+  font-family:calibri;
   text-align:center;
   width:50%;
   margin:auto;
@@ -31,6 +32,11 @@ img {
   margin-bottom: 30px;
 }
 
+.logo{
+    width:8%;
+    margin-left: 0;
+}
+
 .im {
   width:40%;
   
@@ -38,6 +44,15 @@ img {
 
 .bigim {
     width:50%;
+  display: block;
+  Margin-top:30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.hugeim{
+    width:70%;
   display: block;
   Margin-top:30px;
   margin-left: auto;
@@ -83,20 +98,18 @@ a:link {
 p,ol,ul {
   width:50%;
   margin:auto;
-  font-family:Baskerville;
+  font-family:Calibri;
   text-align: justify;
   Padding:10px;
   line-height:1.5;
 }
 
-ol, ul {
+ul {
     color:#32847d;
     
 }
 
-ol {
-    color:black;
-}
+
 
 p.footnote{
     color: dimgrey;
@@ -105,5 +118,6 @@ p.footnote{
     font-size: 14px;
 }
 p.index {
-    text-align: center;
+    text-align: justify;
+
 }
