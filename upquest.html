@@ -7,7 +7,7 @@
     </head>
     <body>
         <a href = "index.html"><img src="imgs/JwG.png" class = "logo" id = "personal-logo"/> </a>
-        
+        <div class="body-all">
         <img src = "imgs/upquestlogo.png" class = "im" id="logo"/>
         <p>This is a class project for CS 147: Introduction to Human-centered Interaction Design at Stanford. I worked with 2 engineers to create and build an IPad app from scratch. </p>
         <p>My role: founder, designer, and user tester</p>
@@ -61,8 +61,8 @@
         <h3>Mid-fi prototype</h3>
         <p>Incorporating feedbacks from the usability test, we now moved into digital interface design. We used Figma because it affords team cooperation better than any other tools we could find.</p>
         <p>Major changes:</p>
-        <ul>
-            <li>Taking out students’ app</li>
+        <ul class = "highlight">
+            <li >Taking out students’ app</li>
             
         </ul>
         <p>Considering the time limits of the project, we decided to take out students’ app and mainly focus on teachers’ side. From then on we would assume our app works with other apps that manage sending questions to students. So we changed the task of students taking quizzes into teachers managing quizzes. Here's the 3 tasks we finalized:</p>
@@ -72,8 +72,8 @@
             <li>Teachers checking results</li>
         </ol>
         <p>Another ramification from this change was that we had to make the teachers’ app into an IPad app to satisfy the course requirement of making mobile apps.</p>
-        <ul>
-            <li>Navigation</li>            
+        <ul class = "highlight">
+            <li >Navigation</li>            
         </ul>
         <p>In our paper prototype user test, users found it hard to navigate between screens. In order to solve this problem, I suggested using a side menu while the other team member insisted on using a hamburger menu to get rid of any visual distractions. After long debates, our teaching assistant suggested a different way of navigation. From our home screen, we can click on the tiles that represent classes to see the quiz results, while clicking on the ‘manage quizzes’ button leads you to creating and managing quizzes. Clicking on the home button on the top right corner will lead you to the homepage.</p>
         <img src="imgs/mid-fi.png" class= "bigim"/>
@@ -82,20 +82,20 @@
         <p>Another related design decision was that the homepage would show the number of students that have completed the latest quiz, because we thought the most common user case would be for teachers to check results of individual quizzes. It would be most efficient if they can see the completion rate right off the bat. There's no need to go check results if only half of the students have completed.</p>
         <img src="imgs/homescreen%20(1).png" class= "im"/>
         <p class = "footnote">Homepage</p>
-        <ul>
+        <ul class = "highlight">
             <li>Quiz repository</li>           
         </ul>
         <p>In the quiz management section, we had the distinction between quiz repository and my class quizzes. The idea was that quiz repository was the place that stored all the quizzes the teacher used historically. The teacher would create quizzes in the repository, and assign them. Or he could go to his class quizzes and import quizzes from the repository.</p>
         <img src="imgs/repository.png" class = "inlineImg"><img src="imgs/classquiz.png" class = "inlineImg" id = "secondimg">
         <p class = "footnote">Quiz repository and my class quizzes</p>
-        <ul>
+        <ul class = "highlight">
             <li>Quiz bank</li>            
         </ul>
         
         <p>Our testers suggested that manually inputting all questions would be too time consuming. Thus we added a quiz bank that integrates all quizzes made by teachers. Meanwhile, we still kept the option of manually creating quizzes. </p>
         <img src="imgs/quizbank.png" class = "im">
         <p class = "footnote">Quiz bank</p>
-        <ul>
+        <ul class = "highlight">
             <li>More granular display of student data</li>            
         </ul>
         <p>We introduced tags that represent specific knowledge, which could help teachers identify the weak and strong points of their students.</p>
@@ -110,38 +110,38 @@
         <h3>Heuristic evaluations</h3>
         <p>Our mid-fi prototype was then put under the scrutiny of classmates using Nielson Heuristic evaluation methods. </p>
         <p>Problems found:</p>
-        <ul>
+        <ul  class = "highlight">
             <li>Tasks not delineated clearly enough in terms of functionalities</li>            
         </ul>
         <p>To our surprise, testers found it unintuitive to put creating and managing quizzes under the same button. While some didn't notice that the tiles were clickable and lead to the quiz results.</p>
-        <ul>
+        <ul  class = "highlight">
             <li>Quiz results page hard to decipher</li>            
         </ul>
         <p>The color coding on the quiz results page were unclear, because we didn't add any notes. Also, the information provided on the results page are sometimes repetitive, leading to unnecessary cluttering. </p>
-        <ul>
+        <ul  class = "highlight">
             <li>Lack of error prevention or correction</li>            
         </ul>
         <p>For example, there's no way to edit an assigned quiz.</p>
         <h3>Hi-fi prototype</h3>
         <!-- <p>See <a href="https://marvelapp.com/35h664h" target = "_blank">here</a>.</p> -->
         <p>To address the issues found by heuristic evaluations, we made some changes while making the hi-fi prototype.</p>
-        <ul>
+        <ul  class = "highlight">
             <li>Navigation bar</li>            
         </ul>
         <p> In the mid-fi prototype we had a landing page as a dashboard. Creating and managing quizzes were wrapped by the same button ”Manage Quizzes”, and tapping on the tiles of classes would lead to quiz results. To switch between tasks, users have to tap on the home button in the top right corner. In the hi-fi prototype, we took out the dashboard and added a tab bar at the bottom, which is always present. It separates the 3 tasks clearly and makes it easy to switch tasks. Now instead of 3 taps to create quizzes, 1 tap on the bottom bar will do the trick.</p>
         <img src="imgs/navigation.png" class="im"/>
-        <ul>
+        <ul class = "highlight">
             <li>Restructured "Quiz management" section</li>            
         </ul>
         <p>We incorporated the quiz repository and assigned quizzes into one page, under the "Quiz management"     tab. On the left side the teacher can see all the classes he’s teaching and all the quiz repository folders he has. This change allows users to see the parallel relationship between repository and assigned quizzes, and allows a quick overview of all the classes and repository folders at first glance.</p>
         <p>Another change is in the way one assigns quizzes. Before, one has to import quizzes from the repository to assign, but now he can assign quizzes directly from the repository.</p>
         <img src="imgs/newrepo.png" class="im"/>
-        <ul>
+        <ul  class = "highlight">
             <li>Reorganized quiz results page</li>            
         </ul>
         <p>In the older version, we had a histogram of the correction rate for each question and a chart that shows answer distributions for each question. Green lines under the percentage signal the right answer, while red dots signal that the percentage is under 60%. In the latest iteration, we made a huge change. We now have a histogram of student scores to show the overall performance of the class. Right under it are bar charts representing the correction rate of each question/tag/student. Tapping on the buttons left to the bars leads to the details of the question. We believe this way we avoid the information overload and unnecessary repetition that was present in our older prototype.</p>
         <img src="imgs/results.png" class = "im"/>
-        <ul>
+        <ul  class = "highlight">
             <li>"Edit" buttons for assigned quizzes</li>            
         </ul>
         <p>In our previous version, there’s no way to edit a quiz once it is assigned. We added an ”edit” button in the hi-fi prototype, which allows one to edit the due date of an assigned quiz. But to edit the quiz itself, one still needs to go to the quiz repository, because the same quiz can be assigned to different classes, changing it in the repository would be more efficient.</p>
@@ -150,7 +150,7 @@
         <p>After the project officially ended, I felt that there were issues that we left unresolved. So I continued to iterate on the prototype on my own and made some changes.</p>
         <p>The current state of the app can be seen <a href="https://marvelapp.com/35h664h" target = "_blank">here</a>.</p>
         <p>Major changes:</p>
-        <ul>
+        <ul class = "highlight">
             <li>Editing quizzes</li>           
         </ul>
         <p>In the hi-fi prototype, one can only edit the contents of a quiz in the repository. This is not efficient, as the teacher might be looking at a quiz he assigned for one class and realize that there are edits needed, and have to go to the repository to look for the quiz. </p>
@@ -158,30 +158,31 @@
         <p>I decided that teachers will be given the options of changing all instances or only one. If he chose to change all, all the instances of the quiz in the current school year will be changed. But the instances in previous years remain intact. The quiz repository is thus organized by school year. Each folder contains all the quizzes that are used in one school year.</p>
         <img src="imgs/changeall.png" class = "im"/>
         <img src="imgs/repo.png" class = "im"/>
-        <ul>
+        <ul class = "highlight">
             <li>Renaming and icons</li>           
         </ul>
         <p>I changed the "quiz repository" to "quiz library" to make it more consistent with conventions. I also changed the navigation bars. "+ New quiz" became "Quiz bank" because editing existing quizzes also take place here. "Quiz management" became "My quizzes" because management doesn't seem to be a common word to use in this situation. Since the last tab is "Quiz results", "My quizzes" would not be confusing. Plus, the icon for "My quizzes" mimics the layout of the page. The icons were added to make the funtions of each tab more clear.</p>
         <img src="imgs/navbar.png" class = "im"/>
-        <ul>
+        <ul class = "highlight">
             <li>Filter for quiz bank</li>           
         </ul>
         <p>In previous prototypes we didn't quite flesh out the filter for quiz bank. Thus I changed the filter to allow more user freedom.</p>
         <img src="imgs/filter.png" class = "im"/>
-        <ul>
+        <ul class = "highlight">
             <li>Copy and edit questions</li>           
         </ul>
         <p>We didn't flesh out the way to use existing quizzes in the quiz bank. I decided that the user should be able to take the whole quizzes or pick questions from them.</p>
         <img src="imgs/existing.png" class = "im"/>
         <!-- <h3>What's next?</h3> -->
         <h2>Key learnings</h2>
-        <ul>
+        <ul class = "highlight">
             <li>User feedback is the key to creating better experience, and the most convincing argument for making decisions.</li>            
         </ul>
         <p>There were times when my teamates and I had disagreements. In the end, it was always feedback from user tests that drove us to a consensus. Unfortuanately we can't have real data on this class project, which bothers me as I consider myself a highly data-driven person. </p>
-        <ul>
+        <ul class = "highlight">
             <li>The importance of setting up deadlines.</li>
         </ul>
         <p>Design can never be perfect. Without deadlines, it is easy to drag on and on and spend too much time on the nitty-gritties. This is a problem I encountered after I started to work on my own.</p>
+        </div>
     </body>
 </html>
