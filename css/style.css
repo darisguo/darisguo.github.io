@@ -1313,4 +1313,8 @@ p.quote {
     font-style: italic;
     color: darkgoldenrod;
 }
+
+.bigmargin{
+    margin-bottom: 35px;
+}
 /*# sourceMappingURL=style.css.map */
