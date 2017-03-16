@@ -1302,11 +1302,12 @@ blockquote .person cite {
     box-shadow: 2px 2px 5px 2px #E0E0E0;
 }
 p.footnote{
-    color: dimgrey;
+    color: #828282;
     margin-top: -5px;
     margin-bottom: 30px;
     text-align: center;
     font-size: 14px;
+    font-style: italic;
 }
 
 p.quote {
