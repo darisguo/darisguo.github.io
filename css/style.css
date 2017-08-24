@@ -11,11 +11,11 @@
 *
 * ======================================================= */
 body {
-  font-family: "Lato", "Gill Sans MT", Arial, sans-serif;
+  font-family: "Lato", Arial, sans-serif;
   font-weight: 400;
   font-size: 17px;
   line-height: 1.7;
-  color: #828282;
+  color: #5E5E5E;
   background: #fff;
   text-align: justify;
     letter-spacing:0.2px;
@@ -580,11 +580,24 @@ h1, h2, h3, h4, h5, h6, figure {
   letter-spacing: 1px;
   color: #000;
 }
+
+.headline {
+    background-color: #0FB2B5;
+}
+
+
+
 .fh5co-heading h3 {
   font-size: 18px;
 }
 .fh5co-heading p {
   font-size: 18px;
+  line-height: 1.5;
+  color: #828282;
+}
+
+.fh5co-heading p homepage-text{
+  font-size: 28px;
   line-height: 1.5;
   color: #828282;
 }
@@ -671,32 +684,32 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #fh5co-started {
-  background: #F7DFDE;
+  background: #DEF5F7;
 }
 #fh5co-started .fh5co-heading {
   margin-bottom: 20px !important;
 }
 #fh5co-started .fh5co-heading h2 {
   color: #fff;
-  color: #685641;
+  color: #4C5454;
   margin-bottom: 20px !important;
 }
 #fh5co-started .fh5co-heading p {
-  color: #685641;
+  color: #4C5454;
 }
 #fh5co-started .btn {
   margin-top: 20px;
   border: 3px solid #fafafa;
-  color: #8c7961;
+  color: #4C5454;
   font-size: 20px;
   font-weight: 400;
-  padding: 20px 0;
+  padding: 15px 0;
   padding-left: 70px;
   padding-right: 70px;
 }
 #fh5co-started .btn:hover {
-  background: #A78682 !important;
-  border: 3px solid #A78682 !important;
+  background: #4C5454 !important;
+  border: 3px solid #4C5454 !important;
   color: #fff;
 }
 
@@ -1075,16 +1088,16 @@ h1, h2, h3, h4, h5, h6, figure {
   border: 2px solid #cabcab;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background: #d4c8bb !important;
-  border-color: #d4c8bb !important;
+  background: #8B8C89 !important;
+  border-color: #8B8C89 !important;
 }
 .btn-primary.btn-outline {
   background: transparent;
-  color: #cabcab;
-  border: 2px solid #cabcab;
+  color: #8B8C89;
+  border: 2px solid #8B8C89;
 }
 .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
-  background: #cabcab;
+  background: #8B8C89;
   color: #fff;
 }
 
