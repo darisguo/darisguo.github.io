@@ -92,9 +92,11 @@ h1, h2, h3, h4, h5, h6, figure {
   top: 0;
   left: 0;
   right: 0;
-  padding: 25px 0;
+  padding: 20px 0;
   z-index: 1;
-  background: #fafafa;
+  background: #fff;
+  margin-bottom: -20px;
+  
 }
 @media screen and (max-width: 768px) {
   .fh5co-nav {
@@ -110,7 +112,7 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 20%;
 }
 .fh5co-nav .fh5co-top-menu {
-  width: 60%;
+  width: 80%;
 }
 .fh5co-nav .fh5co-top-social {
   width: 20%;
@@ -121,7 +123,7 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 0;
   text-transform: uppercase;
   font-weight: bold;
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: "Lato", Arial, sans-serif;
 }
 .fh5co-nav .fh5co-social {
   margin: 3px 0 0 0;
@@ -270,7 +272,7 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #000;
 }
 .fh5co-nav ul li.active > a {
-  color: #cabcab !important;
+  color: #38A8D0 !important;
 }
 .fh5co-nav ul li .form-group {
   border: 1px solid red;
@@ -405,6 +407,11 @@ h1, h2, h3, h4, h5, h6, figure {
   #fh5co-footer {
     padding: 3em 0;
   }
+}
+
+#fh5co-work {
+    
+  
 }
 
 .feature-center {
@@ -572,23 +579,32 @@ h1, h2, h3, h4, h5, h6, figure {
   margin-bottom: 2em;
 }
 .fh5co-heading h2 {
-  font-size: 28px;
+  font-size: 40px;
   margin-bottom: 20px;
   line-height: 1.5;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #000;
+  color: #2D2D2D;
 }
 
 .headline {
     background-color: #0FB2B5;
 }
 
-
+#bluetext {
+    color: #38A8D0;
+    font-size: 38px;
+}
 
 .fh5co-heading h3 {
-  font-size: 18px;
+  font-size: 32px;
+    margin-bottom: 20px;
+  line-height: 1.5;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #4A4A4A;
 }
 .fh5co-heading p {
   font-size: 18px;
@@ -706,6 +722,7 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 15px 0;
   padding-left: 70px;
   padding-right: 70px;
+  margin-bottom: -60px;
 }
 #fh5co-started .btn:hover {
   background: #4C5454 !important;
