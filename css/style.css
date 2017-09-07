@@ -620,6 +620,12 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #828282;
 }
 
+.fh5co-heading p {
+    font-size: 17px;
+    letter-spacing: 0.2px;
+    font-weight: 300
+}
+
 .fh5co-heading p homepage-text{
   font-size: 28px;
   line-height: 1.5;
@@ -1323,7 +1329,7 @@ blockquote .person cite {
 }
 .role h3 {
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 2px;
   margin-bottom: 20px;
 }
