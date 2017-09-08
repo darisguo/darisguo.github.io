@@ -168,6 +168,12 @@
 		});
 	
 	};
+    
+    var scrollToPorfolio = function() {
+        $('#hparrow').on('click', function(event) {
+            $(window).scrollTop($('#firstrow').offset().top - 80);
+        });
+    };
 
 
 	// Loading page
@@ -192,6 +198,7 @@
 		dropdown();
 		goToTop();
 		loaderPage();
+        scrollToPorfolio();
 	});
 
 

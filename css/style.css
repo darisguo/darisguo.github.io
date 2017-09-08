@@ -605,6 +605,11 @@ h1, h2, h3, h4, h5, h6, figure {
     font-size: 38px;
 }
 
+#hparrow {
+    cursor: pointer;
+    width: 50px;
+}
+
 .fh5co-heading h3 {
   font-size: 32px;
     margin-bottom: 20px;
@@ -668,6 +673,18 @@ h1, h2, h3, h4, h5, h6, figure {
     width: 100%;
     margin-bottom: 40px;
   }
+    .fh5co-heading h2 {
+        font-size: 32px;
+    }
+    #bluetext {
+        font-size: 30px;
+    }
+    .portfolio-navigation .text-left {
+        text-align: center;
+    }
+    .portfolio-navigation .text-right {
+        text-align: center;
+    }
 }
 .author .desc {
   width: 60%;
