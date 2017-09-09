@@ -20,8 +20,8 @@
             <text id="Travel-Authors" font-family="LucidaGrande-Bold, Lucida Grande" font-size="18" font-weight="bold" fill="#4A4A4A">
                 <tspan x="189" y="265">Travel Authors</tspan>
             </text>
-            <text id="Travellers" font-family="LucidaGrande-Bold, Lucida Grande" font-size="18" font-weight="bold" fill="#4A4A4A">
-                <tspan x="683" y="265">Travellers</tspan>
+            <text id="Travelers" font-family="LucidaGrande-Bold, Lucida Grande" font-size="18" font-weight="bold" fill="#4A4A4A">
+                <tspan x="686" y="265">Travelers</tspan>
             </text>
             <text id="Love-to-take-photos" font-family="LucidaGrande, Lucida Grande" font-size="18" font-weight="normal" fill="#85748B">
                 <tspan x="137.935547" y="332">Love to take photos and share </tspan>
