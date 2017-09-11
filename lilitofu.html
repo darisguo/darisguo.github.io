@@ -143,10 +143,10 @@
             
                     <p>The general goal was to go from a rough MVP to a polished version 2 that delivers on the brand promise. To be more specific, we wanted the website to be able to:
                     </p>
-                  
-                    <p>1) Provide great reading experience for users so that they can be inspired and prepared to travel</p>
-                
-                    <p>2) Encourage travelers to share their experiences to enrich our community</p>
+                    <ul>
+                        <li>Provide great reading experience for users so that they can be inspired and prepared to travel</li> 
+                        <li>Encourage travelers to share their experiences to enrich our community</li>
+                    </ul>
 
                     <div class="subtitle">
                         <H3>Overall process</H3>
@@ -172,6 +172,9 @@
                             <li>enough exposures on their stories</li>
                             <li>interactions with the readers (likes, recommendations, etc.)</li>
                         </ul>
+                        <div>
+                            <p></p>
+                        </div>
                         <p class="boldtext">For travelers/readers </p>
                         <ul>
                             <li>rich and high-quality contents of travel stories</li>
@@ -185,38 +188,79 @@
                     <div class="subtitle">
                         <h3>Major challenges</h3>
                     </div>
-                    <p>1) While we want to encourage more users to share their stories, we also want to prevent low-quality contents from taking over the platform. </p>
-                    <p>2) We want the first-time users to quickly understand that we’re not merely a photo sharing website, instead, we share stories. How do we convey this on a first glance?</p>
+                    <ul>
+                        <li>How might we incentivize more users to share their stories while keeping the quality of contents, especially on the homepage? </li>
+                        <li>How might we show that we’re not merely a photo sharing website, but a story-sharing platform on a first glance?</li>
+                        <li>How might we make story page engaging and useful for readers?</li>
+                    </ul>
+                    
+                    <div class="subtitle">
+                        <h3>Iterations and user tests</h3>
+                    </div>
+                    <p>With the goals and challenges in mind, I started to explore designs on the homepage and story page, which are the meat of the website experience. </p>
+                    <div class="subtitle">
+                        <h4>Homepage</h4>
+                    </div>
+                    <p class="bigmargin fullwidth"><img src="imgs/lilitofu-homepage-exploration.png" class = "img-responsive"/>
+                    <p class="boldtext">Square, or rectangular?</p>
+                    <p>We decided to use rectangular shape for cover photos, because we found that landscape photos are much more common than portrait photos. Using a landscape rectangular shape cuts less contents from the photos.</p>
+                    <p class="boldtext">Sections, more sections!</p>
+                    <p>To make the homepage richer in content and to incentivize authors, we added more sections on the homepage, such as featured stories and featured authors.</p>
+                    <div class="subtitle">
+                        <h4>Story page</h4>
+                    </div>
+                    <div class="fullwidth">
+                    <p class="bigmargin fullwidth"><img src="imgs/lilitofu-story-page-exploration.png" class = "img-responsive"/>
+                    </p>
+                    <p class="boldtext">To map, or not to map? How?</p>
+                    <p>When we added a map to the story page, users generally thought it was a good idea. But they  were quite confused by how it worked.</p>
+                    <p class="quote">"I thought the lines connecting the pins show the sequence of places he visited."</p>
+                    <p class="quote">"I could hardly see the photos on the map and i thought clicking on them would ealarge them."</p>
+                    <p class="quote">"What are those small dots?"</p>
+                    <p class="boldtext">To index, but how to index? </p>
+                    <p>An index of days and places visited by the author has always been part of the story page because it gives readers a quick overview of the trip. We automatically scrape the address info from the photos but also allow users to edit it. However, there were some usability issues on the index.</p>
+                    <ul>
+                        <li>The address info is often too long and can be very distracting to the reading experience.</li>
+                        <li>Sometimes authors upload multiple photos for the same place, which makes the index repetitive.</li>
+                    </ul>
+                        
+                    </div>
                     <div class="subtitle">
                         <h3>Final designs</h3>
                     </div>
                     
                     <div class="subtitle">
-                        <h4>Homepage experience</h4>
+                        <h4>Homepage</h4>
                     </div>
-                    <p></p>
                     <p class="shadow bigmargin"><img src="imgs/homepage-lilitofu.png" class = "img-responsive"/></p>
-                    <p>Major decisions on homepage:</p>
-                    <p>1) Each sections are put under subtitles to suggest that Lilitofu is a story sharing platform instead of photo sharing. All the stories except the Featured Stories are presented as slides. When hovering on a story cover photo, the cover photo changes to other photos from the story at an interval of one sec.</p>
-                    <p>2) On the first screen of the homepage we give the space to "Featured Stories", which are hand-picked by us and updated regularly. This is the place where stories get highest exposure. Travel authors love this design and so do readers.  </p>
-                    <p>3) The second section is “Featured Authors”. Here authors get direct exposures on their personal profiles. These authors are verified by Lilitofu as Travel Authors. A button for application is placed here to encourage people to apply.</p>
-                    <p>4) The third section is “Top Stories”. These are the stories that received the most likes (represented by a heart button). But since it is likely that the top stories will remain unchanged for a while, we don’t want them to take up too much space so that users see the same contents over and over again, we only show 1 - 3 stories depending on screen widths, and hide the rest in a carousel.</p>
-                    <p>5) The fourth section is “Recent Stories”, which is a never-ending list if you keep clicking on the “Load More” button. This section gives every user an opportunity to expose their stories on the homepage.</p>
+                    <p class="boldtext">Slides show upon hovering</p>
+                    <p>All the stories except the "Featured Stories" are presented as slides. When hovering on a story cover photo, the cover photo changes to other photos from the story at an interval of one sec.</p>
+                    <p class="boldtext">Featured Stories as the first screen</p>
+                    <p>On the first screen of the homepage we give the space to "Featured Stories", which are hand-picked by us and updated regularly. This is the place where stories get highest exposure. Travel authors love this design and so do readers.  </p>
+                    <p class="boldtext">Featured Authors as the second section</p>
+                    <p>Here authors get direct exposures on their personal profiles. These authors are verified by Lilitofu as Travel Authors. A button for application is placed here to encourage people to apply.</p>
+                    <p class="boldtext">Top liked stories</p>
+                    <p>The third section is “Top Stories”. These are the stories that received the most likes (represented by a heart button). But since it is likely that the top stories will remain unchanged for a while, we don’t want them to take up too much space so that users see the same contents over and over again, we only show 1 - 3 stories depending on screen widths, and hide the rest in a carousel.</p>
+                    <p class="boldtext">Recent Stories gives everybody a chance</p>
+                    <p>The fourth section is “Recent Stories”, which is a never-ending list if you keep clicking on the “Load More” button. This section gives every user an opportunity to expose their stories on the homepage.</p>
                     
                     <div class="subtitle">
-                        <h4>Story page experience</h4>
+                        <h4>Story page</h4>
                     </div>
                     <p class="shadow bigmargin"><img src="imgs/lilitofu-story-page-1.png" class = "img-responsive"/></p>
-                    <p>Major decisions on story page:</p>
-                    <p>1) The index of the story is fixed on the left side. It is a two-level index. The child index of the story is simplified to dots representing each places, so that users know the progress of their reading experience. The child index of map is expanded to include the names of the places when users click into the map section, which is located at the bottom of the page. The reason behind this design is that we want to reduce clutters when the user reads the story, so that (s)he can better focus on the story itself. Also, the names of the places are already listed in the address below the photo. But when the user comes to the map section, (s)he is engaged in a trip planning mode, which makes a full blown version of index valuable. The index is fully interactive with the map.</p>
+                    <p class="boldtext">Two-level interactive index</p>
+                    <p>The index of the story is fixed on the left side. It is a two-level index. The child index of the story is simplified to dots representing each places, so that users know the progress of their reading experience. The child index of map is expanded to include the names of the places when users click into the map section, which is located at the bottom of the page. The reason behind this design is that we want to reduce clutters when the user reads the story, so that (s)he can better focus on the story itself. Also, the names of the places are already listed in the address below the photo. But when the user comes to the map section, (s)he is engaged in a trip planning mode, which makes a full blown version of index valuable. The index is fully interactive with the map.</p>
                     <p class="shadow bigmargin"><img src="imgs/lilitofu-story-page-2.png" class = "img-responsive"/></p>
-                    <p>2) The map is put at the bottom of the page because it is more likely to be useful after a user decided that (s)he likes the story. But if (s)he is curious about the exact location on map, (s)he can click on the address below the photo to jump to the map. By clicking on the thumbnail on the map (s)he can return to where he left the story feeds.</p>
-                    <p>3) The map marks all the places mentioned in the story, and link them by day. Most websites of this type link all the locations with one line, which makes it hard to tell where the route starts and ends. </p>
+                    <p class="boldtext">Interactive map at the end of the story</p>
+                    <p>The map is put at the bottom of the page because it is more likely to be useful after a user decided that (s)he likes the story. But if (s)he is curious about the exact location on map, (s)he can click on the address below the photo to jump to the map. By clicking on the thumbnail on the map (s)he can return to where he left the story feeds.</p>
+                    <p>The map marks all the places mentioned in the story, and link them by day. Most websites of this type link all the locations with one line, which makes it hard to tell where the route starts and ends. </p>
+                    <!--
                     <div class="subtitle">
                         <h4>Profile page experience</h4>
                     </div>
                         <p class="shadow bigmargin"><img src="imgs/own-profile-ver2.png" class = "img-responsive"/></p>
                     <p>On the user's profile page, we provide a world map that automatically show the places a traveler has been to according to his/her stories. In doing so we hope to encourage users to contribute more stories.</p>
+-->
                     <!-- <div class="subtitle">
                     
                         <h3>What did you learn?</h3>
@@ -226,7 +270,7 @@
                         <li></li>
                     </ul>
                     
-        <div>--> 
+        --> 
                     <div class="subtitle">
                     
                         <h3>What's next?</h3>
