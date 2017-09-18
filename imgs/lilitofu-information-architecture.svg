@@ -301,10 +301,9 @@
             <text id="Story-page" font-family="Avenir-Heavy, Avenir" font-size="24" font-weight="600" letter-spacing="-0.00737420935" fill="#0FB2B5">
                 <tspan x="2305.76087" y="948">Story page</tspan>
             </text>
-            <path d="M2340,880 L2340,909" id="Line-3" stroke="#979797" stroke-linecap="square"></path>
-            <path d="M2340,878 L2340,908" id="Line-3" stroke="#979797" stroke-linecap="square"></path>
-            <path d="M2340,783 L2340,813" id="Line-3" stroke="#979797" stroke-linecap="square"></path>
-            <path d="M2342,396 L2342,426" id="Line-3" stroke="#979797" stroke-linecap="square"></path>
+            <path d="M2365,878 L2365,908" id="Line-3" stroke="#979797" stroke-linecap="square"></path>
+            <path d="M2365,783 L2365,813" id="Line-3" stroke="#979797" stroke-linecap="square"></path>
+            <path d="M2365,396 L2365,426" id="Line-3" stroke="#979797" stroke-linecap="square"></path>
             <g id="Rectangle-5">
                 <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-25"></use>
                 <rect stroke="#0FB2B5" stroke-width="1" x="2241.5" y="624.5" width="249" height="48"></rect>
@@ -312,7 +311,7 @@
             <text id="Story-page" font-family="Avenir-Heavy, Avenir" font-size="24" font-weight="600" letter-spacing="-0.00737420935" fill="#0FB2B5">
                 <tspan x="2303.76087" y="656">Story page</tspan>
             </text>
-            <path d="M2340,586 L2340,616" id="Line-3" stroke="#979797" stroke-linecap="square"></path>
+            <path d="M2365,586 L2365,616" id="Line-3" stroke="#979797" stroke-linecap="square"></path>
             <text id="OR" font-family="Avenir-Heavy, Avenir" font-size="22" font-weight="600" letter-spacing="-0.00675969291" fill="#0FB2B5">
                 <tspan x="2542.41376" y="165">OR</tspan>
             </text>
