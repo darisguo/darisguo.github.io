@@ -174,6 +174,16 @@
             $(window).scrollTop($('#firstrow').offset().top - 80);
         });
     };
+    
+    var scrollNavBar = function() {
+        $(window).scroll(function(event) {
+            if ($(window).scrollTop() > 200) {
+                $(".fh5co-nav").addClass("bg-white");
+            } else {
+                $(".fh5co-nav").removeClass("bg-white");
+            }
+        });
+    };
 
 
 	// Loading page
@@ -199,6 +209,7 @@
 		goToTop();
 		loaderPage();
         scrollToPorfolio();
+        scrollNavBar();
 	});
 
 

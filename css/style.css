@@ -26,7 +26,7 @@ body {
   overflow-x: hidden;
   width: 100%;
   height: 100%;
-  padding-top: 6em !important;
+/*  padding-top: 6em !important;*/
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -97,6 +97,10 @@ h1, h2, h3, h4, h5, h6, figure {
    
 }
 
+.col-md-offset-1 .boldtext:first-child {
+    margin-top: 0;
+}
+
 .fh5co-nav {
   position: fixed;
   top: 0;
@@ -104,9 +108,9 @@ h1, h2, h3, h4, h5, h6, figure {
   right: 0;
   padding: 20px 0;
   z-index: 1;
-  background: #fff;
+  background: transparent;
   margin-bottom: -20px;
-  
+  transition-timing-function: ease 500ms;
 }
 @media screen and (max-width: 768px) {
   .fh5co-nav {
@@ -150,6 +154,9 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-nav a {
   padding: 5px 0;
   color: #000;
+}
+.bg-white {
+    background: white;
 }
 @media screen and (max-width: 768px) {
   .fh5co-nav .menu-1, .fh5co-nav .menu-2 {
@@ -408,6 +415,11 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 7em 0;
   clear: both;
 }
+#fh5co-author,
+#fh5co-work,
+#fh5co-contact {
+    padding-top: 12em;
+}
 @media screen and (max-width: 768px) {
   #fh5co-started,
   #fh5co-author,
@@ -548,7 +560,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .top-line {
-  padding-bottom: 7em;
+  padding-bottom: 0em;
 }
 .top-line .fh5co-heading {
   margin-bottom: 0 !important;
@@ -1380,12 +1392,14 @@ blockquote .person cite {
 .role ul {
   padding: 0;
   margin: 0;
+  margin-top: -15px;
 }
 .role ul li {
   font-size: 16px;
   list-style: none;
   padding: 0;
   margin: -10px 0 30px 0;
+
 }
 
 .row .subtitle h3{
@@ -1395,11 +1409,16 @@ blockquote .person cite {
     margin: 50px 0 30px 0;
 }
 
-.row .subtitle h4{
+.row .subtitle   h4{
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 600;
     text-align: center;
-    margin: 50px 0 30px 0;
+    margin: 50px 0 30px 0;   
+}
+
+
+.lilitofu{
+    color: #0FB2B5;
 }
 
 .shadow {
@@ -1423,3 +1442,63 @@ p.quote {
     margin-bottom: 35px;
 }
 /*# sourceMappingURL=style.css.map */
+
+.color-block-grey {
+    background: #fafafa;
+}
+
+#story-page {
+    display: table;
+    height: 100%;
+}
+
+#story-page .col-left {
+    height: 100%;
+    transform-style: preserve-3d;
+}
+
+#story-page .fullwidth {
+    position: relative;
+}
+
+.first-screen {
+    
+    background-color: #91EDE1;
+    margin-bottom: 50px;
+}
+
+.healthera{
+    background-color: #00B16A;
+}
+
+
+
+
+
+.whitetext {
+    color:white;
+}
+
+hr.line {
+    border-width: 2px;
+    border-color:#0fb2b5;
+    width:10%;
+    margin-top: -5px;
+    margin-bottom: 30px;
+}
+
+hr.line.healthera{
+    border-color: #00B16A;
+}
+
+.whitetext h3 {
+    color:white;
+}
+
+.whitetext img{
+    margin-top:100px;
+}
+
+#firstrow {
+    margin-top: 7em;
+}
