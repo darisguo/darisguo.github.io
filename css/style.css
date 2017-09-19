@@ -564,6 +564,11 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .top-line .fh5co-heading {
   margin-bottom: 0 !important;
+  margin-top: 6%;
+}
+
+.top-line .fh5co-heading-img {
+  margin-top: 6%;
 }
 
 .categories {
@@ -1452,11 +1457,6 @@ p.quote {
     height: 100%;
 }
 
-#story-page .col-left {
-    height: 100%;
-    transform-style: preserve-3d;
-}
-
 #story-page .fullwidth {
     position: relative;
 }
@@ -1506,4 +1506,23 @@ hr.line.healthera{
 
 #firstrow {
     margin-top: 7em;
+}
+
+
+/* This centralizes text and img in one row */
+.table-row {
+  height: 100%;
+  position: relative;
+  display: table;
+}
+
+.table-col {
+  height: 100%;
+  position: relative;
+}
+
+.table-col-left, .table-col-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
