@@ -1467,10 +1467,15 @@ p.quote {
     margin-bottom: 50px;
 }
 
-.healthera{
+.healthera-bg{
     background-color: #00B16A;
+    
 }
 
+.healthera{
+    
+    color: #00B16A;
+}
 
 
 
