@@ -805,6 +805,10 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #fff;
 }
 
+#fh5co-started{
+    margin-top: 45px;
+}
+
 #fh5co-footer {
   background: #fafafa;
 }
@@ -1382,6 +1386,7 @@ blockquote .person cite {
   font-size: 20px;
   position: relative;
   top: 3px;
+  
 }
 
 .role {
@@ -1440,7 +1445,7 @@ p.footnote{
 
 p.quote {
     font-style: italic;
-    color: darkgoldenrod;
+    color: #1DB7B3;
 }
 
 .bigmargin{
@@ -1501,7 +1506,7 @@ hr.line.healthera{
 }
 
 .whitetext img{
-    margin-top:100px;
+    margin-top:130px;
 }
 
 #firstrow {
@@ -1525,4 +1530,12 @@ hr.line.healthera{
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.upquest {
+    background-color:#1DB7B3;
+}
+
+.upquest-firstscreen {
+    margin-top: 180px;
 }
