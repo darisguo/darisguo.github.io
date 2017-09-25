@@ -673,6 +673,7 @@ h1, h2, h3, h4, h5, h6, figure {
     bottom: -80px;
     position: absolute;
     animation: MoveUpDown 1.5s linear infinite;
+    
 }
 
 @keyframes MoveUpDown {
@@ -1544,7 +1545,7 @@ hr.line.healthera{
 }
 
 #firstrow {
-    margin-top: 7em;
+    margin-top: 12em;
 }
 
 
