@@ -1550,21 +1550,23 @@ hr.line.healthera{
 
 
 /* This centralizes text and img in one row */
-.table-row {
-  height: 100%;
-  position: relative;
-  display: table;
-}
+@media screen and (min-width: 992px) {
+  .table-row {
+    height: 100%;
+    position: relative;
+    display: table;
+  }
 
-.table-col {
-  height: 100%;
-  position: relative;
-}
+  .table-col {
+    height: 100%;
+    position: relative;
+  }
 
-.table-col-left, .table-col-right {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  .table-col-left, .table-col-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .upquest {
