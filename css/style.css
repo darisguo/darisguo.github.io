@@ -652,7 +652,7 @@ h1, h2, h3, h4, h5, h6, figure {
   font-size: 40px;
   margin-bottom: 20px;
   line-height: 1.5;
-  font-weight: bold;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #2D2D2D;
@@ -663,11 +663,11 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #bluetext {
-    color: #38A8D0;
-    font-size: 31px;
+    color: #38a8d0  ;
+    font-size: 28px;
     text-transform: none;
-    font-weight: 400;
-    font-family: "Merriweather";
+    font-weight: 200;
+    font-family: "PT Serif";
 }
 
 #hparrow {
