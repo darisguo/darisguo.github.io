@@ -1583,3 +1583,17 @@ hr.line.healthera{
 .mid-margin-top {
     margin-top: 50px;
 }
+
+.cover-title {
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.cover-text {
+    color: #919191;
+    font-family: "PT Serif";
+    font-weight: 200;
+}
+
