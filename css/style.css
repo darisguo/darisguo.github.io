@@ -410,15 +410,16 @@ h1, h2, h3, h4, h5, h6, figure {
 
 #fh5co-started,
 #fh5co-author,
-#fh5co-work,
 #fh5co-about,
 #fh5co-contact,
 #fh5co-footer {
   padding: 7em 0;
   clear: both;
 }
+#fh5co-work {
+  clear: both;
+}
 #fh5co-author,
-#fh5co-work,
 #fh5co-contact {
     padding-top: 12em;
 }
@@ -597,7 +598,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .top-line .fh5co-heading {
   margin-bottom: 0 !important;
-  margin-top: 6%;
+  margin-top: 40vh;
 }
 
 .top-line .fh5co-heading-img {
@@ -1599,5 +1600,13 @@ hr.line.healthera{
 
 .lg-bg {
     width: 100%;
+}
+
+.landing-page-nav-wrapper {
+  background-image: url("../imgs/landing-page-bg.jpeg");
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 

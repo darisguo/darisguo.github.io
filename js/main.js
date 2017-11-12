@@ -177,7 +177,7 @@
     
     var scrollNavBar = function() {
         $(window).scroll(function(event) {
-            if ($(window).scrollTop() > 200) {
+            if ($(window).scrollTop() > screen.height) {
                 $(".fh5co-nav").addClass("bg-white");
             } else {
                 $(".fh5co-nav").removeClass("bg-white");
