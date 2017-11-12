@@ -598,7 +598,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .top-line .fh5co-heading {
   margin-bottom: 0 !important;
-  margin-top: 40vh;
+  margin-top: 6%;
 }
 
 .top-line .fh5co-heading-img {
@@ -1610,3 +1610,6 @@ hr.line.healthera{
   height: 100vh;
 }
 
+.landing-page-heading {
+  margin-top: 40vh !important;
+}
