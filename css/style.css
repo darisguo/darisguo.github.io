@@ -291,7 +291,7 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #000;
 }
 .fh5co-nav ul li.active > a {
-  color: #9B9B9B !important;
+  color: #989391 !important;
 }
 .fh5co-nav ul li .form-group {
   border: 1px solid red;
@@ -542,7 +542,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .work .work-grid .inner .lilitofu {
-  background: rgba(109, 222, 210, 0.9);  
+  background: rgba(24, 24, 24, 0.9);  
 }
 
 .work .work-grid .inner .handshake {
