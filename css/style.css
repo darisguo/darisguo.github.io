@@ -843,10 +843,6 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #fff;
 }
 
-#fh5co-started{
-    margin-top: 45px;
-}
-
 #fh5co-footer {
   background: #fafafa;
 }
@@ -1612,4 +1608,12 @@ hr.line.healthera{
 
 .landing-page-heading {
   margin-top: 40vh !important;
+}
+
+.about-page-first-screen {
+  background-color: white;
+}
+
+.contact-page-first-screen {
+  background-color: white;
 }
