@@ -291,7 +291,7 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #000;
 }
 .fh5co-nav ul li.active > a {
-  color: #38A8D0 !important;
+  color: #9B9B9B !important;
 }
 .fh5co-nav ul li .form-group {
   border: 1px solid red;
@@ -664,11 +664,11 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #bluetext {
-    color: #38a8d0  ;
+    
     font-size: 28px;
     text-transform: none;
-    font-weight: 200;
-    font-family: "PT Serif";
+    font-weight: 400;
+    
 }
 
 #hparrow {
@@ -704,7 +704,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-heading p {
   font-size: 18px;
   line-height: 1.5;
-  color: #828282;
+  color: #2d2d2d;
 }
 
 .fh5co-heading p {
@@ -813,7 +813,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #fh5co-started {
-  background: #DEF5F7;
+  background: #fafafa;
 }
 #fh5co-started .fh5co-heading {
   margin-bottom: 20px !important;
@@ -844,7 +844,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #fh5co-footer {
-  background: #fafafa;
+  background: #fff;
 }
 #fh5co-footer .fh5co-footer-links {
   padding: 0;
@@ -1213,7 +1213,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .btn-primary {
-  background: #fafafa;
+  background: #fff;
   color: #fff;
   border: 2px solid #cabcab;
 }
@@ -1590,7 +1590,7 @@ hr.line.healthera{
 
 .cover-text {
     color: #919191;
-    font-family: "PT Serif";
+    
     font-weight: 200;
 }
 
@@ -1599,7 +1599,7 @@ hr.line.healthera{
 }
 
 .landing-page-nav-wrapper {
-  background-image: url("../imgs/landing-page-bg.jpeg");
+  background-image: url("../imgs/landing-page-bg3.png");
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
@@ -1611,9 +1611,20 @@ hr.line.healthera{
 }
 
 .about-page-first-screen {
-  background-color: white;
+  background-image: url("../imgs/landing-page-bg.png");
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
 }
 
 .contact-page-first-screen {
-  background-color: white;
+  
+    background-image: url("../imgs/landing-page-bg4.png");
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.contact-links {
+    color: #2D2D2D;
 }
