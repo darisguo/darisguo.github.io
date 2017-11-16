@@ -222,7 +222,7 @@ h1, h2, h3, h4, h5, h6, figure {
   letter-spacing: 2px;
   font-size: 13px;
   padding: 8px 10px;
-  color: rgba(0, 0, 0, 0.9);
+  color: #2D2D2D;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -291,9 +291,9 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #000;
 }
 .fh5co-nav ul li.active > a {
-  color: rgba(0, 0, 0, 0.9) !important;
-  font-weight: 700;
-  border-bottom: 1.5px solid rgba(0, 0, 0, 0.9);
+  color: #2D2D2D !important;
+  font-weight: 600;
+  border-bottom: 1.5px solid #2d2d2d;
 }
 .fh5co-nav ul li .form-group {
   border: 1px solid red;
