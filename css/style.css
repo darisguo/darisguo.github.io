@@ -293,7 +293,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-nav ul li.active > a {
   color: #2D2D2D !important;
   font-weight: 600;
-  border-bottom: 1.5px solid #2d2d2d;
+  border-bottom: 1.5px solid rgba(0, 0, 0, 0.9);
 }
 .fh5co-nav ul li .form-group {
   border: 1px solid red;
