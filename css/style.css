@@ -1480,6 +1480,10 @@ p.footnote{
     font-style: italic;
 }
 
+p.footnote-1{   
+    margin-top: 5px;
+}
+
 p.quote {
     font-style: italic;
     color: #1DB7B3;
