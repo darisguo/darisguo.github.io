@@ -1635,3 +1635,11 @@ hr.line.healthera{
 .contact-links {
     color: #2D2D2D;
 }
+
+.centered-pic {
+  padding-bottom: 0;
+}
+
+.centered-pic > p {
+  margin-bottom: 0;
+}
