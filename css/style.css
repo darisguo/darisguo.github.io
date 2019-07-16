@@ -1605,7 +1605,7 @@ hr.line.healthera{
 }
 
 .landing-page-nav-wrapper {
-  background-image: url("../imgs/landing-page-bg3.png");
+  background-image: url("../imgs/landingpage-bg.svg");
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
@@ -1617,7 +1617,7 @@ hr.line.healthera{
 }
 
 .about-page-first-screen {
-  background-image: url("../imgs/landing-page-bg.png");
+  background-image: url("../imgs/aboutpage-bg.svg");
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
@@ -1625,7 +1625,7 @@ hr.line.healthera{
 
 .contact-page-first-screen {
   
-    background-image: url("../imgs/landing-page-bg5.png");
+    background-image: url("../imgs/contactpage-bg.svg");
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
@@ -1634,12 +1634,4 @@ hr.line.healthera{
 
 .contact-links {
     color: #2D2D2D;
-}
-
-.centered-pic {
-  padding-bottom: 0;
-}
-
-.centered-pic > p {
-  margin-bottom: 0;
 }
