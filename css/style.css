@@ -13,7 +13,7 @@
 body {
   font-family: "Lato", Arial, sans-serif;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 1.7;
   color: #5E5E5E;
   background: #fff;
@@ -537,6 +537,10 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .work .work-grid .inner .healthera {
   background: rgba(0, 177, 106, 0.85);  
+}
+
+.work .work-grid .inner .samplify {
+  background: rgba(62, 168, 221, 0.85);  
 }
 
 .work .work-grid .inner .upquest {
@@ -1519,16 +1523,27 @@ p.quote {
     
 }
 
+.samplify-bg{
+    background-color: #3ea8dd;
+    
+}
+
 .healthera{
     
     color: #00B16A;
 }
 
 
+.blacktext{
+    color:#2D2D2D;
+}
 
+.blacktext h3{
+    color:#2D2D2D;
+}
 
 .whitetext {
-    color:white;
+    color: white;
 }
 
 hr.line {
