@@ -670,19 +670,24 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #bluetext {
-    
-    font-size: 28px;
+    color: white;
+    font-size: 24px;
     text-transform: none;
     font-weight: 400;
     
 }
 
+#title-futura {
+    font-family: futura;
+    font-weight: 600;
+    font-size: 44px;
+}
 #hparrow {
     cursor: pointer;
     width: 50px;
-    bottom: -80px;
+    color: white;
     position: absolute;
-    animation: MoveUpDown 1.5s linear infinite;
+    animation: MoveUpDown 1.2s linear infinite;
     
 }
 
