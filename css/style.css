@@ -665,12 +665,14 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #2D2D2D;
 }
 
+
+
 .headline {
     background-color: #0FB2B5;
 }
 
 #bluetext {
-    color: white;
+    color: #EFEFEF;
     font-size: 24px;
     text-transform: none;
     font-weight: 400;
@@ -681,11 +683,13 @@ h1, h2, h3, h4, h5, h6, figure {
     font-family: futura;
     font-weight: 600;
     font-size: 44px;
+    color: #EFEFEF;
+    text-transform: none;
 }
 #hparrow {
     cursor: pointer;
     width: 50px;
-    color: white;
+    color: #5FBFF9;
     position: absolute;
     animation: MoveUpDown 1.2s linear infinite;
     
