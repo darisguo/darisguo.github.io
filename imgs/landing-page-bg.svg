@@ -5,10 +5,12 @@
     <desc>Created with Sketch.</desc>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="landing-page-bg" fill-rule="nonzero">
-            <rect id="矩形" fill="#3F5FF3" x="0" y="0" width="1440" height="700"></rect>
-            <polygon id="Rectangle" fill="#53D8F4" transform="translate(1183.248076, 624.448076) rotate(45.000000) translate(-1183.248076, -624.448076) " points="1053.59616 494.748076 1312.59616 494.748076 1312.89999 601.381807 1160.67311 753.843784 1053.59616 754.148076"></polygon>
-            <path d="M1440,380 L1440,242 C1401.89235,242 1371,272.892352 1371,311 C1371,349.107648 1401.89235,380 1440,380 Z" id="Oval" fill="#3993DD"></path>
-            <circle id="Oval" fill="#62E1C3" cx="1015" cy="181" r="50"></circle>
+            <g>
+                <rect id="矩形" fill="#E9EDFF" x="0" y="0" width="1440" height="700"></rect>
+                <polygon id="Rectangle" fill="#53D8F4" transform="translate(1183.248076, 624.448076) rotate(45.000000) translate(-1183.248076, -624.448076) " points="1053.59616 494.748076 1312.59616 494.748076 1312.89999 601.381807 1160.67311 753.843784 1053.59616 754.148076"></polygon>
+                <path d="M1440,380 L1440,242 C1401.89235,242 1371,272.892352 1371,311 C1371,349.107648 1401.89235,380 1440,380 Z" id="Oval" fill="#3993DD"></path>
+                <circle id="Oval" fill="#62E1C3" cx="1015" cy="181" r="50"></circle>
+            </g>
         </g>
     </g>
 </svg>
