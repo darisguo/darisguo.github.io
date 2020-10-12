@@ -13,7 +13,7 @@
 body {
   font-family: "Lato", Arial, sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.8;
   color: #5E5E5E;
   background: #fff;
@@ -95,7 +95,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .boldtext {
     font-weight:bold;
     font-size: 20px;
-    margin-top: 20px;
+    margin-top: 30px;
    
 }
 
@@ -493,7 +493,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .highlight {
-    font-size: 24px;
+    font-size: 26px;
     font-style: italic; 
     text-align: center;
     margin-bottom: 100px;
@@ -501,7 +501,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .leftborder{
-    border-left: solid #9FABB1 4px;
+    border-left: solid #9FABB1 1px;
 }
 .highlight-goal{
     margin-top:60px;
@@ -665,33 +665,24 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #2D2D2D;
 }
 
-
-
 .headline {
     background-color: #0FB2B5;
 }
 
 #bluetext {
-    color: #2d2d2d;
-    font-size: 24px;
+    
+    font-size: 28px;
     text-transform: none;
     font-weight: 400;
     
 }
 
-#title-futura {
-    font-family: futura;
-    font-weight: 600;
-    font-size: 44px;
-    
-    text-transform: none;
-}
 #hparrow {
     cursor: pointer;
     width: 50px;
-    color: #5FBFF9;
+    bottom: -80px;
     position: absolute;
-    animation: MoveUpDown 1.2s linear infinite;
+    animation: MoveUpDown 1.5s linear infinite;
     
 }
 
@@ -1462,7 +1453,7 @@ blockquote .person cite {
 }
 
 .row .subtitle h3{
-    font-size: 32px;
+    font-size: 40px;
     font-weight: 600;
     text-align: center;
     margin: 80px 0 30px 0;
@@ -1470,10 +1461,10 @@ blockquote .person cite {
 }
 
 .row .subtitle   h4{
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 600;
     text-align: center;
-    margin: 50px 0 30px 0;   
+    margin: 50px 0 50px 0;   
 }
 
 
@@ -1559,12 +1550,16 @@ hr.line {
     border-width: 2px;
     border-color:#0fb2b5;
     width:10%;
-    margin-top: -16px;
+    margin-top: -5px;
     margin-bottom: 40px;
 }
 
 hr.line.healthera{
     border-color: #00B16A;
+}
+
+hr.divider {
+    margin-top: -30px;
 }
 
 .whitetext h3 {
