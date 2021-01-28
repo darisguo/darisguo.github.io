@@ -94,8 +94,8 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .boldtext {
     font-weight:bold;
-    font-size: 20px;
-    margin-top: 30px;
+    font-size: 18px;
+   
    
 }
 
@@ -438,7 +438,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 #fh5co-work {
     
-  
+  margin-top: 5em;
 }
 
 .feature-center {
@@ -501,13 +501,13 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .leftborder{
-    border-left: solid #9FABB1 1px;
+    border-left: solid #3EA8DD 4px;
 }
 .highlight-goal{
     margin-top:60px;
     margin-bottom: 60px;
     font-weight:200;
-    margin-left: 50px;
+    margin-left: 32px;
     text-align: left;
 }
 .work {
@@ -660,7 +660,6 @@ h1, h2, h3, h4, h5, h6, figure {
   margin-bottom: 20px;
   line-height: 1.5;
   font-weight: 600;
-  text-transform: uppercase;
   letter-spacing: 1px;
   color: #2D2D2D;
 }
@@ -671,8 +670,9 @@ h1, h2, h3, h4, h5, h6, figure {
 
 #bluetext {
     
-    font-size: 28px;
+    font-size: 24px;
     text-transform: none;
+    
     font-weight: 400;
     
 }
@@ -834,7 +834,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #fh5co-started .btn {
   margin-top: 20px;
-  border: 3px solid #fafafa;
+  border: 3px solid #4C5454;
   color: #4C5454;
   font-size: 20px;
   font-weight: 400;
@@ -1224,16 +1224,16 @@ h1, h2, h3, h4, h5, h6, figure {
   border: 2px solid #cabcab;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background: #8B8C89 !important;
-  border-color: #8B8C89 !important;
+  background: #4C5454 !important;
+  border-color: #4C5454 !important;
 }
 .btn-primary.btn-outline {
   background: transparent;
-  color: #8B8C89;
-  border: 2px solid #8B8C89;
+  color: #4C5454;
+  border: 2px solid #4C5454;
 }
 .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
-  background: #8B8C89;
+  background: ##4C5454;
   color: #fff;
 }
 
@@ -1453,7 +1453,7 @@ blockquote .person cite {
 }
 
 .row .subtitle h3{
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 600;
     text-align: center;
     margin: 80px 0 30px 0;
@@ -1461,7 +1461,7 @@ blockquote .person cite {
 }
 
 .row .subtitle   h4{
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 600;
     text-align: center;
     margin: 50px 0 50px 0;   
@@ -1550,7 +1550,7 @@ hr.line {
     border-width: 2px;
     border-color:#0fb2b5;
     width:10%;
-    margin-top: -5px;
+    margin-top: -15px;
     margin-bottom: 40px;
 }
 
@@ -1624,7 +1624,7 @@ hr.divider {
 }
 
 .landing-page-nav-wrapper {
-  background-image: url("../imgs/landing-page-bg.svg");
+  background-image: url("../imgs/landingpagecover.svg");
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
@@ -1644,7 +1644,7 @@ hr.divider {
 
 .contact-page-first-screen {
   
-    background-image: url("../imgs/contactpage-bg.svg");
+    background-image: url("../imgs/contactpage-bg1.svg");
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
